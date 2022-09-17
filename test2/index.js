@@ -1,5 +1,11 @@
 const assert = require("chai").assert;
 
+// const user = {id,name,friends}
+//
+// const user = {id, name}
+// const friends = {user_id, friend_id}
+
+
 const database = (() => {
   const _database = {
     621: { id: 621, name: "XxDragonSlayerxX", friends: [123, 251, 631] },

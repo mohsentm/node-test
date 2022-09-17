@@ -1,7 +1,4 @@
-import chai from 'chai';
-import nameParser from "../src/test1/index.js";
-
-const assert = chai.assert;
+import {nameParser, ParsedName} from "./index";
 
 describe('Test 1', function () {
     it('Split name strings into their respective parts', function () {
@@ -25,6 +22,6 @@ describe('Test 1', function () {
             {first: "Ghandi", middle: [], last: null},
         ];
 
-        assert.deepEqual(nameParser(names), expected);
+        expect(nameParser(names)).toMatchObject<Array<ParsedName>>(expected);
     });
 });
