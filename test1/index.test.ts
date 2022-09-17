@@ -1,7 +1,7 @@
 import {nameParser, ParsedName} from "./index";
 
-describe('Test 1', () => {
-    it('Split name strings into their respective parts', () => {
+describe("Test 1", () => {
+    it("Split name strings into their respective parts", () => {
         const names = [
             "Michael Daniel Jäger",
             "LINUS HARALD christer WAHLGREN",
