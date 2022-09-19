@@ -1,7 +1,13 @@
-import {nameParser, ParsedName} from "./index";
+/*
+ * Case sensitivity:
+ *  I coded with this assumption that output should be in capital letter format ( as the way exists in the expected)
+ */
+
+import {expect, test, describe} from '@jest/globals';
+import {nameParser} from "./index";
 
 describe("Test 1", () => {
-    it("Split name strings into their respective parts", () => {
+    test("Split name strings into their respective parts", () => {
         const names = [
             "Michael Daniel Jäger",
             "LINUS HARALD christer WAHLGREN",
@@ -22,6 +28,6 @@ describe("Test 1", () => {
             {first: "Ghandi", middle: [], last: null},
         ];
 
-        expect(nameParser(names)).toMatchObject<Array<ParsedName>>(expected);
+        expect(nameParser(names)).toMatchObject(expected);
     });
 });
