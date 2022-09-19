@@ -1,6 +1,10 @@
 /*
  * BUG: Invalid user ID defined in the expected data.
  *    There was a user with ID 350 which doesn't exist. I replaced the ID with correct one (123)
+ *
+ *  Assumption:
+ *    I coded with this assumption that I should use getUser and listUserIDs methods for fetching the data
+ *    ( and I can't  GetMany and other ORM relation features for fetch and map the data)
  */
 import {expect, test, describe} from '@jest/globals';
 import {User} from "./user.entity";
