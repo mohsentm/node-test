@@ -3,6 +3,10 @@
  *      I coded with this assumption that input parameters were validated therefore I didn't add position validate
  *
  * REFACTOR: Since you mentioned that I could refactor freely, I refactored the positions variable structure as well
+ *
+ * Other solution: Instead of using enum value for positions,
+ *                 could accept the number and letter as a position and then use letter ASCII code for calculation
+ *                  ( I used this solution at GoLang test)
  */
 
 
