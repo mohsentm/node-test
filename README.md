@@ -13,3 +13,11 @@ Fetch users and populate all of their friends
 ## Case 3
 
 Validate if two knights in a game of chess can attack each other based on their position.
+
+---
+
+Run these commands to install the packages and then run the tests
+```bash
+npm i --dev
+npm run test
+```
