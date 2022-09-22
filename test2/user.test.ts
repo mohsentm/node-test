@@ -66,7 +66,6 @@ describe("Test 2", () => {
                 ],
             },
         ];
-        // expect.assertions(1);
         const userService = new UsersService(new database());
         await expect(userService.getUsers()).resolves.toMatchObject(expected)
     });
@@ -78,7 +77,6 @@ describe("Test 2", () => {
                 return new Promise((res) => res([11]));
             }
         }
-        expect.assertions(1);
         const userService = new UsersService(new database2());
         await expect(userService.getUsers()).rejects.toThrowError(Error)
     });
