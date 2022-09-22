@@ -8,7 +8,7 @@ export const nameParser = (names: string[]): Array<ParsedName> => names.map((ful
     const fullNameList: string[] = fullName.split(" ").map((name: string) => toUpperCaseFirst(name));
 
     return {
-        first: fullNameList.shift() ?? null,
+        first: fullNameList.shift(),
         last: fullNameList.pop() ?? null,
         middle: fullNameList
     }
